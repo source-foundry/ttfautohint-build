@@ -1,0 +1,28 @@
+sudo: true
+language: generic
+
+matrix:
+  include:
+    - os: linux
+      sudo: required
+      env:
+        - TARGET="lint"
+      before_script:
+        - sudo apt-get -qq update
+        - sudo apt-get install -y shellcheck
+      script:
+        - make -j $TARGET
+    - os: linux
+      sudo: required
+      env:
+        - TARGET="build"
+      script:
+        - make -j $TARGET
+    - os: osx
+      env:
+        - TARGET="build"
+      script:
+        - make -j $TARGET
+
+notifications:
+  email: false
