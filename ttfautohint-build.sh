@@ -17,6 +17,10 @@
 
 # The build directory.
 BUILD="$HOME/ttfautohint-build"
+INST="$BUILD/local"
+
+# Excepted build binary path
+TTFAUTOHINT_BIN="$INST/bin/ttfautohint"
 
 # The library versions.
 FREETYPE_VERSION="2.8"
@@ -45,8 +49,6 @@ if test -d "$BUILD" -o -f "$BUILD"; then
   echo "Build directory \`$BUILD' must not exist."
   exit 1
 fi
-
-INST="$BUILD/local"
 
 mkdir "$BUILD"
 mkdir "$INST"
@@ -210,9 +212,14 @@ make LDFLAGS="$TA_LDFLAGS -all-static"
 make install-strip
 cd ..
 
-
-echo "#####"
-echo "binary: $INST/bin/ttfautohint"
-echo "#####"
+# test for the expected path to the executable
+if [ -f "$INST/bin/ttfautohint" ]; then
+  echo "#####"
+  echo "binary: $TTFAUTOHINT_BIN"
+  echo "#####"
+else
+  echo "ttfautohint executable was not found on the path $TTFAUTOHINT_BIN" 1>&2
+  exit 1
+fi
 
 # eof
