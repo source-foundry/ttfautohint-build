@@ -10,7 +10,7 @@ matrix:
       before_script:
         - sudo apt-get -qq update
         - sudo apt-get install -y shellcheck
-        - sudo apt-get install -y checkbashisms
+        - sudo apt-get install -y devscripts
       script:
         - make -j $TARGET
     - os: linux
