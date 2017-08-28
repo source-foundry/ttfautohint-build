@@ -44,7 +44,7 @@ With both of the above approaches, the ttfautohint executable is installed on th
 
 ### ttfautohint Execution
 
-You can use any of the following approaches to use ttfautohint in your build shell scripts:
+You can use the following approaches to execute ttfautohint with your font files:
 
 #### Shell Scripts
 
