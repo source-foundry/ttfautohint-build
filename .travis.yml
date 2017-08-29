@@ -38,5 +38,13 @@ matrix:
       script:
         - make -j $TARGET
 
+after_failure:
+  - echo "#########################################"
+  - echo "############ BUILD FAILED ###############"
+  - echo "#########################################"
+  - echo "Fail exit status code $TRAVIS_TEST_RESULT"
+  - echo "   -- FreeType config.log follows --"
+  - cat $HOME/ttfautohint-build/freetype-2.8/builds/unix/config.log
+
 notifications:
   email: false
