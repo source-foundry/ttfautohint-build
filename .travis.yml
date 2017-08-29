@@ -39,11 +39,11 @@ matrix:
         - make -j $TARGET
 
 after_failure:
-  - @echo "#########################################"
-  - @echo "############ BUILD FAILED ###############"
-  - @echo "#########################################"
-  - @echo "Fail exit status code $TRAVIS_TEST_RESULT"
-  - @echo "   -- ttfautohint config.log follows --"
+  - echo "#########################################"
+  - echo "############ BUILD FAILED ###############"
+  - echo "#########################################"
+  - echo "Fail exit status code $TRAVIS_TEST_RESULT"
+  - echo "   -- ttfautohint config.log follows --"
   - cat $HOME/ttfautohint-build/ttfautohint-1.7/config.log
 
 notifications:
