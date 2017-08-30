@@ -3,40 +3,42 @@ language: generic
 
 matrix:
   include:
-    - os: linux
-      sudo: required
-      env:
-        - TARGET="lint"
-      before_script:
-        - sudo apt-get -qq update
-        - sudo apt-get install -y shellcheck
-        - sudo apt-get install -y devscripts
-      script:
-        - make -j $TARGET
-    - os: linux
-      sudo: required
-      env:
-        - TARGET="build"
-      script:
-        - make -j $TARGET
+    # - os: linux
+    #   sudo: required
+    #   env:
+    #     - TARGET="lint"
+    #   before_script:
+    #     - sudo apt-get -qq update
+    #     - sudo apt-get install -y shellcheck
+    #     - sudo apt-get install -y devscripts
+    #   script:
+    #     - make -j $TARGET
+    # - os: linux
+    #   sudo: required
+    #   env:
+    #     - TARGET="build"
+    #   script:
+    #     - make -j $TARGET
     - os: osx
       osx_image: xcode6.4
       env:
         - TARGET="build"
       script:
         - make -j $TARGET
-    - os: osx
-      osx_image: xcode7.3
-      env:
-        - TARGET="build"
-      script:
-        - make -j $TARGET
-    - os: osx
-      osx_image: xcode8.3
-      env:
-        - TARGET="build"
-      script:
-        - make -j $TARGET
+    # - os: osx
+    #   osx_image: xcode7.3
+    #   env:
+    #     - TARGET="build"
+    #   script:
+    #     - make -j $TARGET
+    # - os: osx
+    #   osx_image: xcode8.3
+    #   env:
+    #     - TARGET="build"
+    #   script:
+    #     - make -j $TARGET
+after_failure:
+  - cat /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.1.0/include/stddef.h
 
 notifications:
   email: false
