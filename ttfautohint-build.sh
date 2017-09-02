@@ -25,7 +25,7 @@ TTFAUTOHINT_BIN="$INST/bin/ttfautohint"
 # The library versions.
 FREETYPE_VERSION="2.8"
 HARFBUZZ_VERSION="1.5.0"
-TTFAUTOHINT_VERSION="1.7"
+TTFAUTOHINT_VERSION="1.7-dirty"
 
 # Necessary patches (lists of at most 10 URLs each separated by whitespace,
 # to be applied in order).
@@ -62,7 +62,9 @@ echo "#####"
 
 curl -L -O "http://download.savannah.gnu.org/releases/freetype/$FREETYPE.tar.gz"
 curl -O "https://www.freedesktop.org/software/harfbuzz/release/$HARFBUZZ.tar.bz2"
-curl -L -O "http://download.savannah.gnu.org/releases/freetype/$TTFAUTOHINT.tar.gz"
+# curl -L -O "http://download.savannah.gnu.org/releases/freetype/$TTFAUTOHINT.tar.gz"
+curl -O https://github.com/source-foundry/ttfautohint-build/files/1266023/ttfautohint-1.7-dirty.zip
+unzip ttfautohint-1.7-dirty.zip
 
 count=0
 for i in $FREETYPE_PATCHES
