@@ -63,8 +63,7 @@ echo "#####"
 curl -L -O "http://download.savannah.gnu.org/releases/freetype/$FREETYPE.tar.gz"
 curl -O "https://www.freedesktop.org/software/harfbuzz/release/$HARFBUZZ.tar.bz2"
 # curl -L -O "http://download.savannah.gnu.org/releases/freetype/$TTFAUTOHINT.tar.gz"
-curl -O https://github.com/source-foundry/ttfautohint-build/files/1266023/ttfautohint-1.7-dirty.zip
-unzip ttfautohint-1.7-dirty.zip
+curl -L -O "https://groff.ffii.org/groff/temp/$TTFAUTOHINT.tar.gz"
 
 count=0
 for i in $FREETYPE_PATCHES
