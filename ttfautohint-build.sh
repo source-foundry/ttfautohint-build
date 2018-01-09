@@ -41,7 +41,7 @@ INST="$BUILD/local"
 TTFAUTOHINT_BIN="$INST/bin/ttfautohint"
 
 # The library versions.
-FREETYPE_VERSION="2.8.1"
+FREETYPE_VERSION="2.9"
 HARFBUZZ_VERSION="1.7.4"
 TTFAUTOHINT_VERSION="1.8.1"
 
@@ -75,9 +75,9 @@ echo "#####"
 echo "Download all necessary archives and patches."
 echo "#####"
 
-curl -L -O "http://download.savannah.gnu.org/releases/freetype/$FREETYPE.tar.gz"
+curl -L -O "https://download.savannah.gnu.org/releases/freetype/$FREETYPE.tar.gz"
 curl -O "https://www.freedesktop.org/software/harfbuzz/release/$HARFBUZZ.tar.bz2"
-curl -L -O "http://download.savannah.gnu.org/releases/freetype/$TTFAUTOHINT.tar.gz"
+curl -L -O "https://download.savannah.gnu.org/releases/freetype/$TTFAUTOHINT.tar.gz"
 
 count=0
 for i in $FREETYPE_PATCHES
