@@ -163,6 +163,7 @@ cd "$FREETYPE" || exit 1
   --prefix="$INST" \
   --enable-static \
   --disable-shared \
+  --enable-freetype-config \
   PKG_CONFIG=" " \
   CFLAGS="$TA_CPPFLAGS $TA_CFLAGS" \
   CXXFLAGS="$TA_CPPFLAGS $TA_CXXFLAGS" \
