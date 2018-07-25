@@ -8,6 +8,8 @@ The build script is `ttfautohint-build.sh` (located in the root of the repositor
 
 Builds employ a simple `make` workflow that does not require super user permissions.
 
+If you are looking for a simple way to use install + use ttfautohint and do not need to build the application from source, check out the free, open [ttfautohint-py project](https://github.com/fonttools/ttfautohint-py).
+
 ## Pre-Install Build Dependencies
 
 ### Linux
