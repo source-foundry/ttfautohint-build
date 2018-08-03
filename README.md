@@ -87,6 +87,6 @@ $ ttfautohint [ttfautohint args]
 
 ## License
 
-MIT License
+[MIT License](LICENSE)
 
 
