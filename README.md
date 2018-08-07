@@ -36,9 +36,9 @@ $ make
 ### cURL Approach
 
 ```
-$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.1.tar.gz
-$ tar -xzvf ttfautohint-build-1.8.2.1.tar.gz
-$ cd ttfautohint-build-1.8.2.1
+$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.2.tar.gz
+$ tar -xzvf ttfautohint-build-1.8.2.2.tar.gz
+$ cd ttfautohint-build-1.8.2.2
 $ make
 ```
 
