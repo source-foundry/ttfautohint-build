@@ -5,7 +5,7 @@
 # This script builds a stand-alone binary for the command line version of
 # ttfautohint, downloading any necessary libraries.
 #
-# Version 2018-Mar-19.
+# Version 2018-Aug-07.
 
 # The MIT License (MIT)
 
