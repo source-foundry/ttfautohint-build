@@ -1,5 +1,8 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7af50cb6b5484633a689e2ca86e11569)](https://app.codacy.com/app/SourceFoundry/ttfautohint-build?utm_source=github.com&utm_medium=referral&utm_content=source-foundry/ttfautohint-build&utm_campaign=Badge_Grade_Dashboard)
-# ttfautohint-build  [![Build Status](https://travis-ci.org/source-foundry/ttfautohint-build.svg?branch=master)](https://travis-ci.org/source-foundry/ttfautohint-build)
+
+# ttfautohint-build  
+
+[![Build Status](https://travis-ci.org/source-foundry/ttfautohint-build.svg?branch=master)](https://travis-ci.org/source-foundry/ttfautohint-build)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7af50cb6b5484633a689e2ca86e11569)](https://app.codacy.com/app/SourceFoundry/ttfautohint-build)
 
 ## About
 
