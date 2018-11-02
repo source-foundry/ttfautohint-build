@@ -40,9 +40,9 @@ $ make
 ### cURL Approach
 
 ```
-$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.5.tar.gz
-$ tar -xzvf ttfautohint-build-1.8.2.5.tar.gz
-$ cd ttfautohint-build-1.8.2.5
+$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.6.tar.gz
+$ tar -xzvf ttfautohint-build-1.8.2.6.tar.gz
+$ cd ttfautohint-build-1.8.2.6
 $ make
 ```
 
