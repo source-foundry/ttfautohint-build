@@ -1,3 +1,5 @@
+.PHONY: default build lint shellcheck checkbashisms
+
 default: build
 
 build: ttfautohint-build.sh
