@@ -27,7 +27,7 @@ If you are looking for a simple way to install + use ttfautohint and do not need
 
 ## Usage
 
-Select one of the following approaches to install the current release of ttfautohint.
+Select one of the following approaches to install the current release of `ttfautohint`.
 
 ### git clone Approach
 
@@ -40,17 +40,17 @@ $ make
 ### cURL Approach
 
 ```
-$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.6.tar.gz
-$ tar -xzvf ttfautohint-build-1.8.2.6.tar.gz
-$ cd ttfautohint-build-1.8.2.6
+$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.7.tar.gz
+$ tar -xzvf ttfautohint-build-1.8.2.7.tar.gz
+$ cd ttfautohint-build-1.8.2.7
 $ make
 ```
 
-With both of the above approaches, the ttfautohint executable is installed on the path `$HOME/ttfautohint-build/local/bin/ttfautohint`.
+With both of the above approaches, the `ttfautohint` executable is installed on the path `$HOME/ttfautohint-build/local/bin/ttfautohint`.
 
 ### ttfautohint Execution
 
-You can use the following approaches to execute ttfautohint with your font files:
+You can use the following approaches to execute `ttfautohint` with your font files:
 
 #### Shell Scripts
 
@@ -83,7 +83,7 @@ then, source your shell settings file on the command line with:
 $ source [shell settings file path]
 ```
 
-You can then use ttfautohint on the command line as follows:
+You can then use `ttfautohint` on the command line as follows:
 
 ```
 $ ttfautohint [ttfautohint args]
