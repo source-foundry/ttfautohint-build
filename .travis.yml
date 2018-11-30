@@ -37,6 +37,12 @@ matrix:
         - TARGET="build"
       script:
         - make -j $TARGET
+    - os: osx
+      osx_image: xcode10.1
+      env:
+        - TARGET="build"
+      script:
+        - make -j $TARGET
 
 notifications:
   email: false
