@@ -42,7 +42,7 @@ TTFAUTOHINT_BIN="$INST/bin/ttfautohint"
 
 # The library versions.
 FREETYPE_VERSION="2.9.1"
-HARFBUZZ_VERSION="2.2.0"
+HARFBUZZ_VERSION="2.3.0"
 TTFAUTOHINT_VERSION="1.8.2"
 
 # Necessary patches (lists of at most 10 URLs each separated by whitespace,

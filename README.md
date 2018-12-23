@@ -40,9 +40,9 @@ $ make
 ### cURL Approach
 
 ```
-$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.7.tar.gz
-$ tar -xzvf ttfautohint-build-1.8.2.7.tar.gz
-$ cd ttfautohint-build-1.8.2.7
+$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.8.tar.gz
+$ tar -xzvf ttfautohint-build-1.8.2.8.tar.gz
+$ cd ttfautohint-build-1.8.2.8
 $ make
 ```
 
@@ -92,5 +92,3 @@ $ ttfautohint [ttfautohint args]
 ## License
 
 [MIT License](LICENSE)
-
-
