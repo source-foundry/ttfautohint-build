@@ -8,7 +8,7 @@
 
 ttfautohint-build includes a simple, straightforward [ttfautohint](https://www.freetype.org/ttfautohint/) build from scratch approach on Linux and macOS platforms.  [FreeType](https://www.freetype.org/) and [Harfbuzz](https://github.com/behdad/harfbuzz) build dependencies (at appropriate release versions) are included in the installation.
 
-The build script is `ttfautohint-build.sh` (located in the root of the repository).  This script is linted with `shellcheck` & `checkbashisms` and is tested for build execution completion on Linux (currently Ubuntu Trusty) and macOS v10.10-v10.13 using [the Travis CI service](https://travis-ci.org/source-foundry/ttfautohint-build).
+The build script is `ttfautohint-build.sh` (located in the root of the repository).  This script is linted with `shellcheck` & `checkbashisms` and is tested for build execution completion on Ubuntu Linux and macOS v10.10-v10.14 using [the Travis CI service](https://travis-ci.org/source-foundry/ttfautohint-build).
 
 Builds employ a simple `make` workflow that does not require super user permissions.
 
@@ -40,9 +40,9 @@ $ make
 ### cURL Approach
 
 ```
-$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.2.8.tar.gz
-$ tar -xzvf ttfautohint-build-1.8.2.8.tar.gz
-$ cd ttfautohint-build-1.8.2.8
+$ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.3.0.tar.gz
+$ tar -xzvf ttfautohint-build-1.8.3.0.tar.gz
+$ cd ttfautohint-build-1.8.3.0
 $ make
 ```
 
@@ -88,6 +88,10 @@ You can then use `ttfautohint` on the command line as follows:
 ```
 $ ttfautohint [ttfautohint args]
 ```
+
+## Changes
+
+Please see the changelog in [the project releases](https://github.com/source-foundry/ttfautohint-build/releases).
 
 ## License
 
