@@ -5,11 +5,11 @@
 # This script builds a stand-alone binary for the command line version of
 # ttfautohint, downloading any necessary libraries.
 #
-# Version 2018-Nov-30.
+# Version 2019-Apr-24.
 
 # The MIT License (MIT)
 
-# Copyright (c) 2017-2018 Werner Lemberg
+# Copyright (c) 2017 Werner Lemberg
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this software and associated documentation files (the "Software"), to deal in
