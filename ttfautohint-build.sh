@@ -5,7 +5,7 @@
 # This script builds a stand-alone binary for the command line version of
 # ttfautohint, downloading any necessary libraries.
 #
-# Version 2019-Apr-24.
+# Version 2019-May-27.
 
 # The MIT License (MIT)
 
@@ -42,7 +42,7 @@ TTFAUTOHINT_BIN="$INST/bin/ttfautohint"
 
 # The library versions.
 FREETYPE_VERSION="2.10.0"
-HARFBUZZ_VERSION="2.4.0"
+HARFBUZZ_VERSION="2.5.0"
 TTFAUTOHINT_VERSION="1.8.3"
 
 # Necessary patches (lists of at most 10 URLs each separated by whitespace,
