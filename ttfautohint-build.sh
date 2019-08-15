@@ -5,7 +5,7 @@
 # This script builds a stand-alone binary for the command line version of
 # ttfautohint, downloading any necessary libraries.
 #
-# Version 2019-Apr-24.
+# Version 2019-Aug-14.
 
 # The MIT License (MIT)
 
@@ -41,8 +41,8 @@ INST="$BUILD/local"
 TTFAUTOHINT_BIN="$INST/bin/ttfautohint"
 
 # The library versions.
-FREETYPE_VERSION="2.10.0"
-HARFBUZZ_VERSION="2.4.0"
+FREETYPE_VERSION="2.10.1"
+HARFBUZZ_VERSION="2.6.0"
 TTFAUTOHINT_VERSION="1.8.3"
 
 # Necessary patches (lists of at most 10 URLs each separated by whitespace,
@@ -76,7 +76,7 @@ echo "Download all necessary archives and patches."
 echo "#####"
 
 curl -L -O "https://download.savannah.gnu.org/releases/freetype/$FREETYPE.tar.gz"
-curl -O "https://www.freedesktop.org/software/harfbuzz/release/$HARFBUZZ.tar.bz2"
+curl -L -O "https://github.com/harfbuzz/harfbuzz/releases/download/$HARFBUZZ_VERSION/$HARFBUZZ.tar.xz"
 curl -L -O "https://download.savannah.gnu.org/releases/freetype/$TTFAUTOHINT.tar.gz"
 
 count=0
@@ -113,7 +113,7 @@ echo "Extract archives."
 echo "#####"
 
 tar -xzvf "$FREETYPE.tar.gz"
-tar -xjvf "$HARFBUZZ.tar.bz2"
+tar -xvf "$HARFBUZZ.tar.xz"
 tar -xzvf "$TTFAUTOHINT.tar.gz"
 
 
