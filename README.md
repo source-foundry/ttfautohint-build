@@ -66,7 +66,7 @@ You can use the following approaches to execute `ttfautohint` with your font fil
 
 TTFAH="$HOME/ttfautohint-build/local/bin/ttfautohint"
 
-"TTFAH" [ttfautohint args]
+"$TTFAH" [ttfautohint args]
 ```
 
 #### Command Line
