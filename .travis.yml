@@ -38,13 +38,19 @@ matrix:
       script:
         - make -j $TARGET
     - os: osx
-      osx_image: xcode10.1
+      osx_image: xcode10.3
       env:
         - TARGET="build"
       script:
         - make -j $TARGET
     - os: osx
-      osx_image: xcode10.2
+      osx_image: xcode11.6
+      env:
+        - TARGET="build"
+      script:
+        - make -j $TARGET
+    - os: osx
+      osx_image: xcode12
       env:
         - TARGET="build"
       script:
