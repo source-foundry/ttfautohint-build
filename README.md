@@ -41,7 +41,7 @@ $ make
 
 ```
 $ curl -L -O https://github.com/source-foundry/ttfautohint-build/archive/v1.8.3.2.tar.gz
-$ tar -xzvf ttfautohint-build-1.8.3.2.tar.gz
+$ tar -xzvf v1.8.3.2.tar.gz
 $ cd ttfautohint-build-1.8.3.2
 $ make
 ```
