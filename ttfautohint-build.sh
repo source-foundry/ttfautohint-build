@@ -36,10 +36,8 @@
 # The build directory.
 if [[ $OSTYPE == "darwin"* ]]; then
   BUILD="$HOME/Library/Caches"
-elif [[ -z "${XDG_CACHE_HOME}" ]]; then
-  BUILD="$HOME/.cache/ttfautohint-build"
 else
-  BUILD="$XDG_CACHE_HOME/ttfautohint-build"
+  BUILD="${XDG_CACHE_HOME:-$HOME/.cache}/ttfautohint-build"
 fi
 INST="$BUILD/local"
 
