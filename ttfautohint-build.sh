@@ -38,14 +38,14 @@ BUILD_DIR="ttfautohint-build"
 
 # The build directory.
 if [[ "$OS" == "Darwin"* ]]; then
-  BUILD_PATH="$HOME/Library/Caches/$BUILD_DIR"
+  BUILD="$HOME/Library/Caches/$BUILD_DIR"
 elif [[ "$OS" == "Linux"* ]]; then
-  BUILD_PATH="${XDG_CACHE_HOME:-$HOME/.cache}/$BUILD_DIR"
+  BUILD="${XDG_CACHE_HOME:-$HOME/.cache}/$BUILD_DIR"
 else
   echo "warn: OS not recognized"
   BUILD_PATH="$HOME/ttfautohint-build"
 fi
-INST="$BUILD_PATH/local"
+INST="$BUILD/local"
 
 # Excepted build binary path
 TTFAUTOHINT_BIN="$INST/bin/ttfautohint"
