@@ -1,8 +1,8 @@
 
 # ttfautohint-build  
 
-[![Build Status](https://travis-ci.org/source-foundry/ttfautohint-build.svg?branch=master)](https://travis-ci.org/source-foundry/ttfautohint-build)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7af50cb6b5484633a689e2ca86e11569)](https://app.codacy.com/app/SourceFoundry/ttfautohint-build)
+[![Linux Build CI](https://github.com/source-foundry/ttfautohint-build/actions/workflows/linux-ci.yml/badge.svg)](https://github.com/source-foundry/ttfautohint-build/actions/workflows/linux-ci.yml)
+[![macOS Build CI](https://github.com/source-foundry/ttfautohint-build/actions/workflows/macos-ci.yml/badge.svg)](https://github.com/source-foundry/ttfautohint-build/actions/workflows/macos-ci.yml)
 
 ## About
 
