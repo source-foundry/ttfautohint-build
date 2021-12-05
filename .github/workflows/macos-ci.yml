@@ -1,4 +1,4 @@
-name: Shell script lints
+name: macOS Build CI
 
 on: [push, pull_request]
 

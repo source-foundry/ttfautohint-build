@@ -1,4 +1,4 @@
-name: Shell script lints
+name: Linux Build CI
 
 on: [push, pull_request]
 
