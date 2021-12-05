@@ -1,0 +1,13 @@
+name: Shell script lints
+
+on: [push, pull_request]
+
+jobs:
+  macos-build:
+    runs-on: macos-latest
+    name: macOS Build
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v2
+      - name: macOS build test
+        run: make
