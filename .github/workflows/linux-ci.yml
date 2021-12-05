@@ -1,0 +1,13 @@
+name: Shell script lints
+
+on: [push, pull_request]
+
+jobs:
+  linux-build:
+    runs-on: ubuntu-latest
+    name: Linux Build
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v2
+      - name: Linux build test
+        run: make
