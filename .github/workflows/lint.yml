@@ -10,7 +10,7 @@ jobs:
       - name: Check out source repository
         uses: actions/checkout@v2
       - name: Install lint dependencies
-        run: sudo apt-get install -y shellcheck checkbashisms
+        run: sudo apt-get install -y shellcheck devscripts
       - name: shellcheck lints of shell script source
         run: make shellcheck
       - name: checkbashisms lints of shell script source
