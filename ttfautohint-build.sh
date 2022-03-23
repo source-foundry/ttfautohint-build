@@ -37,9 +37,9 @@ OS="$(uname -s)"
 
 # The build directory.
 BUILD_DIR="ttfautohint-build"
-if [[ "$OS" = "Darwin"* ]]; then
+if [ "$OS" = "Darwin"* ]; then
   BUILD="$HOME/Library/Caches/$BUILD_DIR"
-elif [[ "$OS" = "Linux"* ]]; then
+elif [ "$OS" = "Linux"* ]; then
   BUILD="${XDG_CACHE_HOME:-$HOME/.cache}/$BUILD_DIR"
 else
   echo "warn: OS not recognized"
